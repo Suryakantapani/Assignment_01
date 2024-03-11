@@ -4,11 +4,8 @@ public class Q10 {
  static double sumcolum(int m[][], int col) {
 	 double sum=0;
 	 for(int i=0; i<3; i++) {
-		 sum=0;
-		 for(int j=0; j<4; j++) {
-				sum+=m[i
-				       ][j];
-		 }}
+      sum+=a[i][col];
+	 }}
 				return sum; 
  }
  public static void main(String[]args) {
