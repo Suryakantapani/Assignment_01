@@ -1,34 +1,34 @@
 package java_primer;
 import java.util.Scanner;
+
 public class Q10 {
- static double sumcolum(int m[][], int col) {
-	 double sum=0;
-	 for(int i=0; i<3; i++) {
-      sum+=a[i][col];
-	 }}
-				return sum; 
- }
- public static void main(String[]args) {
-	 Scanner sc=new Scanner(System.in);
-	 System.out.println("enter the element of array :");
-	 int n=3; int c=4;
-	 int a[][]=new int[n][c];
-	 for(int i=0; i<n; i++) {
-		 for(int j=0; j<c; j++) {
-			 a[i][j]=sc.nextInt();
-		 }
+	 public static double sumColum(int m[][], int columnIndex) {
+		 double sum=0;
+	         for(int i=0; i<3; i++) {
+			 sum+=a[i][col];
+	         }
+		 return sum; 
 	 }
-	 for(int i=0; i<n; i++) {
-		 for(int j=0; j<c; j++) {
-			  System.out.print(a[i][j]+" ");
-		 }
-	 System.out.println();
-	 }
-	 for(int k=0; k<c; k++) {
-		 System.out.println(c+" "+sumcolum(a,c));
-		 
-	 }
-	  
-	 
- }
+
+	public static void main(String[]args) {
+		Scanner sc=new Scanner(System.in);
+	        int n=3; int c=4;
+	        double arr[][]=new double[n][c];
+		System.out.println("Enter a 3-by-4 matrix row by row:");
+	        for(int i=0; i<n; i++) {
+			for(int j=0; j<c; j++) {
+				arr[i][j]=sc.nextDouble();
+			}
+		}
+	        for(int i=0; i<n; i++) {
+			for(int j=0; j<c; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+	                System.out.println();
+	        }
+		for(int k=0; k<c; k++) {
+			System.out.println("Sum of elements at column "+j+" is "+sumcolum(arr,j));
+		}
+	}
 }
+
