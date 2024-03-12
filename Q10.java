@@ -2,7 +2,7 @@ package java_primer;
 import java.util.Scanner;
 
 public class Q10 {
-	 public static double sumColum(int m[][], int columnIndex) {
+	 public static double sumColum(int m[][], int col) {
 		 double sum=0;
 	         for(int i=0; i<3; i++) {
 			 sum+=a[i][col];
